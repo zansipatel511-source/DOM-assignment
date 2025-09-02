@@ -53,5 +53,18 @@
 
 #half
 {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 30px;
+    box-shadow: 5px 5px 20px black, -4px -4px;
+    background-color: lightblue;
+}
+
+span 
+{
+        font-size: 40px;
 }
