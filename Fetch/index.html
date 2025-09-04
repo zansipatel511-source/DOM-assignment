@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="border: 2px solid black;">
+        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops" height="200" width="200">
+        <h3>price: 109.95</h3>
+        <h5>men's clothing</h5>
+        <p>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday</p>
+    </div>
+</body>
+</html>
+
+<script>
+    fetch("https://fakestoreapi.com/products")
+    .then((res) => res.json())
+    .then((data) => console.log(data))
+    .catch((err) => console.log(err));
+
+
+    function SingleCard(title, image, price, category, description)
+    {
+        let card = `
+         <div style="border: 2px solid black;">
+        <img src="https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_t.png" alt="Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops" height="200" width="200">
+        <h3>price: 109.95</h3>
+        <h5>men's clothing</h5>
+        <p>Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday</p>
+    </div>
+        `
+    }
+
+</script>
